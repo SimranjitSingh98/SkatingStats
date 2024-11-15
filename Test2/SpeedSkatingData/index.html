@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventi Skating</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Seleziona un evento di Skating</h1>
+
+        <!-- Dropdown per la selezione degli eventi -->
+        <label for="event-dropdown">Eventi:</label>
+        <select id="event-dropdown">
+            <option value="">Seleziona un evento</option>
+        </select>
+
+        <!-- Dettagli dell'evento selezionato -->
+        <div id="event-details" style="display: none;">
+            <h2>Dettagli dell'evento:</h2>
+            <p><strong>Nome:</strong> <span id="event-name"></span></p>
+            <p><strong>ID:</strong> <span id="event-id"></span></p>
+            <p><strong>Slug:</strong> <span id="event-slug"></span></p>
+            <p><strong>Data di inizio:</strong> <span id="event-start-date"></span></p>
+            <p><strong>Data di fine:</strong> <span id="event-end-date"></span></p>
+        </div>
+
+        <!-- Bottone per scaricare il file JSON -->
+        <button id="download-json" style="display:none;">Scarica file JSON</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
